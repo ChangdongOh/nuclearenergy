@@ -16,7 +16,7 @@ Codes used in this procedure are saved on script/newscrawling folder.
 
 Preprocess
 -------
-With the [KoNLPy](http://konlpy.org/en/v0.4.4/) wrapper of [twitter korean morpheme analyzer](https://github.com/twitter/twitter-korean-text), I seperated the collected news articles into morpheme units and left only noun, and removed some meaningless stopwords. After the preprocess, I visualized the most frequently used words in my text data.
+With the [KoNLPy](http://konlpy.org/en/v0.4.4/) wrapper of [twitter korean morpheme analyzer](https://github.com/twitter/twitter-korean-text), I seperated the collected news articles into morpheme units and left only noun, and removed some meaningless stopwords. After the preprocess, I visualized the most frequently used words in my text data. You could review the codes that I used in this task on the script/preporcess.py file.
 
 ![wordfrequency](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/freq.jpg)
 
@@ -26,3 +26,31 @@ I adopted an Author-Topic Model[(Rosen-Zvi et al. 2004)](http://dl.acm.org/citat
 
 Result
 ---------
+####Topics
+After the analysis based on ATM, the algorithm suggested a composition of topics in the text data and proportion of words of each topic. You could see the well-organized table form of the topic composition in [topics15.csv](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/topics15.csv) file.
+
+My collaborators reviewed the distribution of topics and words, and suggested a new framework for combining the 15 topics, because there are several overlapping and similar topics are in our analysis result. Topics can be organized by four frames, Policy & Governance, Economy & Industry, Environment & Safety, Diplomacy & Security according to the framework. I classified the topics by this framework and analyzed the difference of frames by time period and publisher. Additionally, I suggested the visualized analysis data by two part(proportional size of topics in the period, absolute size of topics in the period) due to the fact that the number of news articles were changed significantly over time. You could see those graphs on [proportion](https://github.com/ChangdongOh/nuclearenergy/tree/master/result/proportion), [nofwords](https://github.com/ChangdongOh/nuclearenergy/tree/master/result/nofwords) folders in the result folder. The following plots are the results which are interesting for me.
+
+#####Attitude Difference of Press Companies and Governmental Organizations?
+![newpub](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%96%B8%EB%A1%A0%EC%82%AC%20%EC%A0%84%EC%B2%B4.jpg)
+![govorg](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%9B%90%EC%9E%90%EB%A0%A5%EA%B3%84%20%EC%A0%84%EB%B0%98.jpg)
+
+#####Economic Newspapers
+![eco](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EA%B2%BD%EC%A0%9C%EC%A7%80.jpg)
+
+#####Regional Newspapers
+![reg](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%A7%80%EC%97%AD%EC%96%B8%EB%A1%A0.jpg)
+
+#####Liberals concern safety, Conservatives concern economy?
+![lib](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%A7%84%EB%B3%B4.jpg)
+![con](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EB%B3%B4%EC%88%98.jpg)
+
+
+Future Research Plan
+------
+
+We are trying hard to finish a first paper based on my analysis. I found many interesting characteristics and dispositions of each newspaper company and govermental organization, so I want to try a follow-up study which can be used to elaborate my analysis. My co-authors suggested that Semantic Network Analysis(SNA) can be useful to expatiate our analysis result, but now I consider that semi-supervised sentiment analysis using topic model is better and more decisive way to amplify the meaning of our work.
+
+
+
+
