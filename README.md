@@ -14,6 +14,15 @@ Additionally, I collected 925 official announcements of several governmental org
 
 Codes used in this procedure are saved on script/newscrawling folder.
 
+Preprocess
+-------
+With the [KoNLPy](http://konlpy.org/en/v0.4.4/) wrapper of [twitter korean morpheme analyzer](https://github.com/twitter/twitter-korean-text), I seperated the collected news articles into morpheme units and left only noun, and removed some meaningless stopwords. After the preprocess, I visualized the most frequently used words in my text data.
+
+![wordfrequency](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/freq.jpg)
+
 Analysis
 --------
-I adopted an Author-Topic Model[(Rosen-Zvi et al. 2004)](http://dl.acm.org/citation.cfm?id=1036902), which is well-known modified version of Latent Dirichlet Allocation. 
+I adopted an Author-Topic Model[(Rosen-Zvi et al. 2004)](http://dl.acm.org/citation.cfm?id=1036902), which is well-known modified algorithm of Latent Dirichlet Allocation. Today LDA is widely used by social scientists. With this algorithm alone, however, it is hard to do more than exploratory research for large text data. To solve the problem, many algorithms such as DTM, DMR, STM are suggested and ATM is one of them. With this algorithm, we can see the propotional changes of topic by author. In this study, I regarded the publisher(or organization) of article and the time of publication as an 'author', for example, tagging articles in the form of 'Korea Joongang Daily-2016-1'. I used the [python wrapper of ATM](https://radimrehurek.com/gensim/models/atmodel.html), which was announced recently. The authornamelda.py file of script folder is my code used in the analysis process.
+
+Result
+---------
