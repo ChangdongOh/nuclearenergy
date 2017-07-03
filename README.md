@@ -26,7 +26,8 @@ I adopted an Author-Topic Model[(Rosen-Zvi et al. 2004)](http://dl.acm.org/citat
 
 Result
 ---------
-####Topics
+
+#### Topics
 After the analysis based on ATM, the algorithm suggested a composition of topics in the text data and proportion of words of each topic. You could see the well-organized table form of the topic composition in [topics15.csv](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/topics15.csv) file.
 
 My collaborators reviewed the distribution of topics and words and suggested a new framework for combining the 15 topics because there are several overlapping and similar topics are in our analysis result. Topics can be organized by four frames, Policy & Governance, Economy & Industry, Environment & Safety, Diplomacy & Security according to the framework. I classified the topics by this framework and analyzed the difference of frames by time period and publisher. Additionally, I suggested the visualized analysis data by two part(proportional size of topics in the period, the absolute size of topics in the period) due to the fact that the number of news articles was changed significantly over time. You could see those graphs on [proportion](https://github.com/ChangdongOh/nuclearenergy/tree/master/result/proportion), [nofwords](https://github.com/ChangdongOh/nuclearenergy/tree/master/result/nofwords) folders in the result folder. 
@@ -35,17 +36,17 @@ The red line means the industry, economy related topics, and the green describes
 
 The following plots are the results which are interesting for me.
 
-Attitude Difference of Press Companies and Governmental Organizations?
+##### Attitude Difference of Press Companies and Governmental Organizations?
 ![newpub](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%96%B8%EB%A1%A0%EC%82%AC%20%EC%A0%84%EC%B2%B4.jpg)
 ![govorg](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%9B%90%EC%9E%90%EB%A0%A5%EA%B3%84%20%EC%A0%84%EB%B0%98.jpg)
 
-Economic Newspapers
+##### Economic Newspapers
 ![eco](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EA%B2%BD%EC%A0%9C%EC%A7%80.jpg)
 
-Regional Newspapers
+##### Regional Newspapers
 ![reg](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%A7%80%EC%97%AD%EC%96%B8%EB%A1%A0.jpg)
 
-Liberals concern safety and governance, Conservatives concern economy?
+##### Liberals concern safety and governance, Conservatives concern economy?
 ![lib](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%A7%84%EB%B3%B4.jpg)
 ![con](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EB%B3%B4%EC%88%98.jpg)
 
