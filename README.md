@@ -40,11 +40,17 @@ The following plots are the results which are interesting for me.
 ![newpub](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%96%B8%EB%A1%A0%EC%82%AC%20%EC%A0%84%EC%B2%B4.jpg)
 ![govorg](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%9B%90%EC%9E%90%EB%A0%A5%EA%B3%84%20%EC%A0%84%EB%B0%98.jpg)
 
-##### Economic Newspapers
+Two graphs reveals that the governmental organization and media were responding differently to important events and affairs. To be specific, the organizations tended to pay more attention to the economic issues.
+
+##### Business Newspapers
 ![eco](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EA%B2%BD%EC%A0%9C%EC%A7%80.jpg)
+
+Understandably, business newspapers concerned the topics related to the nuclear energy industry and ecomic problems.
 
 ##### Regional Newspapers
 ![reg](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%A7%80%EC%97%AD%EC%96%B8%EB%A1%A0.jpg)
+
+Regional newspapers covered more issues related to the policy, conflict and governance. They seems to represent a local residents, who are direct stakeholders of the nuclear energy.
 
 ##### Liberals concern safety and governance, Conservatives concern economy?
 ![lib](https://github.com/ChangdongOh/nuclearenergy/blob/master/result/nofwords/%EC%A7%84%EB%B3%B4.jpg)
